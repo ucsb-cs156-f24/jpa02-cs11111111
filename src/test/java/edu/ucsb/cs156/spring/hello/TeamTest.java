@@ -38,4 +38,18 @@ public class TeamTest {
         assertEquals(expectedResult, result);
     }
 
+    @Test
+    public void correct_equals() {
+        Team t1 = new Team("Team1");
+        t1.addMember("Mom");
+        Team t2 = new Team("Team2");
+        t1.addMember("Dad");
+        String s = "";
+
+    
+        assertEquals(t1.equals(t1), true);
+        assertEquals(t1.equals(s), false);
+        assertEquals(t1.equals(t2), false);
+    }
+
 }
