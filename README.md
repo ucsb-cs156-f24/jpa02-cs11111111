@@ -1,6 +1,6 @@
 # jpa02-cs11111111
 
-Repo: https://github.com/ucsb-cs156-f24/jpa02-cgauch
+Repo: https://github.com/ucsb-cs156-f24/jpa02-cs11111111
 
 Deployed at: https://jpa02-cs11111111.dokku-16.cs.ucsb.edu
 
