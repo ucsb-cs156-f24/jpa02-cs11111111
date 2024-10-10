@@ -43,13 +43,26 @@ public class TeamTest {
         Team t1 = new Team("Team1");
         t1.addMember("Mom");
         Team t2 = new Team("Team2");
+        t1.addMember("Mom");
+        assertEquals(t1.equals(t2), false);
         t1.addMember("Dad");
+        assertEquals(t1.equals(t2), false);
+
+        Team t3 = new Team("Team3");
+        t3.addMember("Mom");
+        Team t4 = new Team("Team3");
+        t4.addMember("Mom");
+        assertEquals(t3.equals(t4), true);
+        t3.addMember("Dad");
+        assertEquals(t3.equals(t4), false);
+
+
         String s = "";
 
     
         assertEquals(t1.equals(t1), true);
         assertEquals(t1.equals(s), false);
-        assertEquals(t1.equals(t2), false);
+        
     }
 
 }
